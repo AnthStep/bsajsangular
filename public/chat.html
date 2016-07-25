@@ -1,0 +1,8 @@
+		<div>
+			<span>Login: {{chat.name}}</span>
+			<ul>
+				<li ng-repeat='n in chat.messages track by $index'>{{n.name}}: {{n.message}}</li>
+			</ul>
+			<textarea name="" id="text" cols="30" rows="10" ng-model='chat.textMessage'></textarea>
+			<input type="button" value="Send" id="textSend" ng-click='chat.sendHandler()'>
+		</div>
